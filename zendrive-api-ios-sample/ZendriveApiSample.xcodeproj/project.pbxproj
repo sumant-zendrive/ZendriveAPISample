@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EC8C8FBC77DA82A7483BFB8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DF596AE866D6D09E6BA03 /* libPods.a */; };
+		EC865DE21A5D61E9001B3558 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC865DE11A5D61E9001B3558 /* main.m */; };
+		EC865DE51A5D61E9001B3558 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC865DE41A5D61E9001B3558 /* AppDelegate.m */; };
+		EC865DEE1A5D61E9001B3558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC865DEC1A5D61E9001B3558 /* Main.storyboard */; };
+		EC865DF01A5D61E9001B3558 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC865DEF1A5D61E9001B3558 /* Images.xcassets */; };
+		EC865DF31A5D61E9001B3558 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC865DF11A5D61E9001B3558 /* LaunchScreen.xib */; };
+		EC865DFF1A5D61E9001B3558 /* ZendriveApiSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC865DFE1A5D61E9001B3558 /* ZendriveApiSampleTests.m */; };
+		ECBD0A3A1A5D65F40062B937 /* ZendriveAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0A391A5D65F40062B937 /* ZendriveAPI.m */; };
+		ECBD0A401A5D66220062B937 /* TripDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0A3D1A5D66220062B937 /* TripDetailsViewController.m */; };
+		ECBD0A411A5D66220062B937 /* TripListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0A3F1A5D66220062B937 /* TripListViewController.m */; };
+		ECBD0A4D1A5D67FF0062B937 /* EventCard.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0A441A5D67FF0062B937 /* EventCard.m */; };
+		ECBD0A4E1A5D67FF0062B937 /* TripCard.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0A461A5D67FF0062B937 /* TripCard.m */; };
+		ECBD0A501A5D67FF0062B937 /* ZendriveScores.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0A491A5D67FF0062B937 /* ZendriveScores.m */; };
+		ECBD0A561A5D688E0062B937 /* NSObject+BlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0A551A5D688E0062B937 /* NSObject+BlockAdditions.m */; };
+		ECBD0A5A1A5D96970062B937 /* ParsingUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0A591A5D96970062B937 /* ParsingUtility.m */; };
+		ECBD0A631A5DA8140062B937 /* HTRouteEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0A601A5DA8140062B937 /* HTRouteEvent.m */; };
+		ECBD0A641A5DA8140062B937 /* ZDMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0A621A5DA8140062B937 /* ZDMapView.m */; };
+		ECBD0A671A5DA95C0062B937 /* UIColor+ZendriveApiSample.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0A661A5DA95C0062B937 /* UIColor+ZendriveApiSample.m */; };
+		ECBD0A6A1A5DB6A20062B937 /* GpsPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0A691A5DB6A20062B937 /* GpsPoint.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC865DF91A5D61E9001B3558 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC865DD41A5D61E9001B3558 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC865DDB1A5D61E9001B3558;
+			remoteInfo = ZendriveApiSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A5F3138979186B92A7D93B8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		604EDC652C401538D77C7270 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C99DF596AE866D6D09E6BA03 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC865DDC1A5D61E9001B3558 /* ZendriveApiSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZendriveApiSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC865DE01A5D61E9001B3558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC865DE11A5D61E9001B3558 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC865DE31A5D61E9001B3558 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC865DE41A5D61E9001B3558 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC865DED1A5D61E9001B3558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC865DEF1A5D61E9001B3558 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EC865DF21A5D61E9001B3558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EC865DF81A5D61E9001B3558 /* ZendriveApiSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZendriveApiSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC865DFD1A5D61E9001B3558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC865DFE1A5D61E9001B3558 /* ZendriveApiSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZendriveApiSampleTests.m; sourceTree = "<group>"; };
+		ECBD0A361A5D65F40062B937 /* HMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMConstants.h; sourceTree = "<group>"; };
+		ECBD0A381A5D65F40062B937 /* ZendriveAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZendriveAPI.h; sourceTree = "<group>"; };
+		ECBD0A391A5D65F40062B937 /* ZendriveAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZendriveAPI.m; sourceTree = "<group>"; };
+		ECBD0A3C1A5D66220062B937 /* TripDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripDetailsViewController.h; sourceTree = "<group>"; };
+		ECBD0A3D1A5D66220062B937 /* TripDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripDetailsViewController.m; sourceTree = "<group>"; };
+		ECBD0A3E1A5D66220062B937 /* TripListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripListViewController.h; sourceTree = "<group>"; };
+		ECBD0A3F1A5D66220062B937 /* TripListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripListViewController.m; sourceTree = "<group>"; };
+		ECBD0A431A5D67FF0062B937 /* EventCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCard.h; sourceTree = "<group>"; };
+		ECBD0A441A5D67FF0062B937 /* EventCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCard.m; sourceTree = "<group>"; };
+		ECBD0A451A5D67FF0062B937 /* TripCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripCard.h; sourceTree = "<group>"; };
+		ECBD0A461A5D67FF0062B937 /* TripCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripCard.m; sourceTree = "<group>"; };
+		ECBD0A491A5D67FF0062B937 /* ZendriveScores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZendriveScores.m; sourceTree = "<group>"; };
+		ECBD0A4C1A5D67FF0062B937 /* ZendriveScores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZendriveScores.h; sourceTree = "<group>"; };
+		ECBD0A541A5D688E0062B937 /* NSObject+BlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BlockAdditions.h"; sourceTree = "<group>"; };
+		ECBD0A551A5D688E0062B937 /* NSObject+BlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BlockAdditions.m"; sourceTree = "<group>"; };
+		ECBD0A571A5D6CE10062B937 /* ZendriveApiSample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZendriveApiSample-Prefix.pch"; sourceTree = "<group>"; };
+		ECBD0A581A5D96970062B937 /* ParsingUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsingUtility.h; sourceTree = "<group>"; };
+		ECBD0A591A5D96970062B937 /* ParsingUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsingUtility.m; sourceTree = "<group>"; };
+		ECBD0A5B1A5DA6360062B937 /* GeneralConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralConstants.h; sourceTree = "<group>"; };
+		ECBD0A5F1A5DA8140062B937 /* HTRouteEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTRouteEvent.h; sourceTree = "<group>"; };
+		ECBD0A601A5DA8140062B937 /* HTRouteEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTRouteEvent.m; sourceTree = "<group>"; };
+		ECBD0A611A5DA8140062B937 /* ZDMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDMapView.h; sourceTree = "<group>"; };
+		ECBD0A621A5DA8140062B937 /* ZDMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDMapView.m; sourceTree = "<group>"; };
+		ECBD0A651A5DA95C0062B937 /* UIColor+ZendriveApiSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZendriveApiSample.h"; sourceTree = "<group>"; };
+		ECBD0A661A5DA95C0062B937 /* UIColor+ZendriveApiSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZendriveApiSample.m"; sourceTree = "<group>"; };
+		ECBD0A681A5DB6A20062B937 /* GpsPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpsPoint.h; sourceTree = "<group>"; };
+		ECBD0A691A5DB6A20062B937 /* GpsPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GpsPoint.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC865DD91A5D61E9001B3558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC8C8FBC77DA82A7483BFB8 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC865DF51A5D61E9001B3558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3206D34654A50D80CDD702FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C99DF596AE866D6D09E6BA03 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36CA5CA0E2D21DFF786105CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				604EDC652C401538D77C7270 /* Pods.debug.xcconfig */,
+				2A5F3138979186B92A7D93B8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		56CC6B5F1A5DFA4200B100EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EC865DD31A5D61E9001B3558 = {
+			isa = PBXGroup;
+			children = (
+				56CC6B5F1A5DFA4200B100EA /* Resources */,
+				EC865DDE1A5D61E9001B3558 /* ZendriveApiSample */,
+				EC865DFB1A5D61E9001B3558 /* ZendriveApiSampleTests */,
+				EC865DDD1A5D61E9001B3558 /* Products */,
+				36CA5CA0E2D21DFF786105CB /* Pods */,
+				3206D34654A50D80CDD702FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC865DDD1A5D61E9001B3558 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC865DDC1A5D61E9001B3558 /* ZendriveApiSample.app */,
+				EC865DF81A5D61E9001B3558 /* ZendriveApiSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC865DDE1A5D61E9001B3558 /* ZendriveApiSample */ = {
+			isa = PBXGroup;
+			children = (
+				EC865DE31A5D61E9001B3558 /* AppDelegate.h */,
+				EC865DE41A5D61E9001B3558 /* AppDelegate.m */,
+				EC865DEC1A5D61E9001B3558 /* Main.storyboard */,
+				EC865DEF1A5D61E9001B3558 /* Images.xcassets */,
+				EC865DF11A5D61E9001B3558 /* LaunchScreen.xib */,
+				ECBD0A341A5D65F40062B937 /* Classes */,
+				EC865DDF1A5D61E9001B3558 /* Supporting Files */,
+			);
+			path = ZendriveApiSample;
+			sourceTree = "<group>";
+		};
+		EC865DDF1A5D61E9001B3558 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC865DE01A5D61E9001B3558 /* Info.plist */,
+				ECBD0A571A5D6CE10062B937 /* ZendriveApiSample-Prefix.pch */,
+				EC865DE11A5D61E9001B3558 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC865DFB1A5D61E9001B3558 /* ZendriveApiSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC865DFE1A5D61E9001B3558 /* ZendriveApiSampleTests.m */,
+				EC865DFC1A5D61E9001B3558 /* Supporting Files */,
+			);
+			path = ZendriveApiSampleTests;
+			sourceTree = "<group>";
+		};
+		EC865DFC1A5D61E9001B3558 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC865DFD1A5D61E9001B3558 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECBD0A341A5D65F40062B937 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD0A5E1A5DA8140062B937 /* Views */,
+				ECBD0A521A5D688E0062B937 /* Categories */,
+				ECBD0A421A5D67C70062B937 /* Model */,
+				ECBD0A3B1A5D66220062B937 /* ViewControllers */,
+				ECBD0A351A5D65F40062B937 /* Constants */,
+				ECBD0A371A5D65F40062B937 /* Utils */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ECBD0A351A5D65F40062B937 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD0A361A5D65F40062B937 /* HMConstants.h */,
+				ECBD0A5B1A5DA6360062B937 /* GeneralConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		ECBD0A371A5D65F40062B937 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD0A381A5D65F40062B937 /* ZendriveAPI.h */,
+				ECBD0A391A5D65F40062B937 /* ZendriveAPI.m */,
+				ECBD0A581A5D96970062B937 /* ParsingUtility.h */,
+				ECBD0A591A5D96970062B937 /* ParsingUtility.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ECBD0A3B1A5D66220062B937 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD0A3E1A5D66220062B937 /* TripListViewController.h */,
+				ECBD0A3F1A5D66220062B937 /* TripListViewController.m */,
+				ECBD0A3C1A5D66220062B937 /* TripDetailsViewController.h */,
+				ECBD0A3D1A5D66220062B937 /* TripDetailsViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECBD0A421A5D67C70062B937 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD0A431A5D67FF0062B937 /* EventCard.h */,
+				ECBD0A441A5D67FF0062B937 /* EventCard.m */,
+				ECBD0A451A5D67FF0062B937 /* TripCard.h */,
+				ECBD0A461A5D67FF0062B937 /* TripCard.m */,
+				ECBD0A4C1A5D67FF0062B937 /* ZendriveScores.h */,
+				ECBD0A491A5D67FF0062B937 /* ZendriveScores.m */,
+				ECBD0A681A5DB6A20062B937 /* GpsPoint.h */,
+				ECBD0A691A5DB6A20062B937 /* GpsPoint.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECBD0A521A5D688E0062B937 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD0A531A5D688E0062B937 /* NSObject */,
+				ECBD0A651A5DA95C0062B937 /* UIColor+ZendriveApiSample.h */,
+				ECBD0A661A5DA95C0062B937 /* UIColor+ZendriveApiSample.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		ECBD0A531A5D688E0062B937 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD0A541A5D688E0062B937 /* NSObject+BlockAdditions.h */,
+				ECBD0A551A5D688E0062B937 /* NSObject+BlockAdditions.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		ECBD0A5E1A5DA8140062B937 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD0A5F1A5DA8140062B937 /* HTRouteEvent.h */,
+				ECBD0A601A5DA8140062B937 /* HTRouteEvent.m */,
+				ECBD0A611A5DA8140062B937 /* ZDMapView.h */,
+				ECBD0A621A5DA8140062B937 /* ZDMapView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC865DDB1A5D61E9001B3558 /* ZendriveApiSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC865E021A5D61E9001B3558 /* Build configuration list for PBXNativeTarget "ZendriveApiSample" */;
+			buildPhases = (
+				FBAD2E64AD3C646573FC04A1 /* Check Pods Manifest.lock */,
+				EC865DD81A5D61E9001B3558 /* Sources */,
+				EC865DD91A5D61E9001B3558 /* Frameworks */,
+				EC865DDA1A5D61E9001B3558 /* Resources */,
+				C33757B2897553A908B952F6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZendriveApiSample;
+			productName = ZendriveApiSample;
+			productReference = EC865DDC1A5D61E9001B3558 /* ZendriveApiSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC865DF71A5D61E9001B3558 /* ZendriveApiSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC865E051A5D61E9001B3558 /* Build configuration list for PBXNativeTarget "ZendriveApiSampleTests" */;
+			buildPhases = (
+				EC865DF41A5D61E9001B3558 /* Sources */,
+				EC865DF51A5D61E9001B3558 /* Frameworks */,
+				EC865DF61A5D61E9001B3558 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC865DFA1A5D61E9001B3558 /* PBXTargetDependency */,
+			);
+			name = ZendriveApiSampleTests;
+			productName = ZendriveApiSampleTests;
+			productReference = EC865DF81A5D61E9001B3558 /* ZendriveApiSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC865DD41A5D61E9001B3558 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Zendrive;
+				TargetAttributes = {
+					EC865DDB1A5D61E9001B3558 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					EC865DF71A5D61E9001B3558 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = EC865DDB1A5D61E9001B3558;
+					};
+				};
+			};
+			buildConfigurationList = EC865DD71A5D61E9001B3558 /* Build configuration list for PBXProject "ZendriveApiSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC865DD31A5D61E9001B3558;
+			productRefGroup = EC865DDD1A5D61E9001B3558 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC865DDB1A5D61E9001B3558 /* ZendriveApiSample */,
+				EC865DF71A5D61E9001B3558 /* ZendriveApiSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC865DDA1A5D61E9001B3558 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC865DEE1A5D61E9001B3558 /* Main.storyboard in Resources */,
+				EC865DF31A5D61E9001B3558 /* LaunchScreen.xib in Resources */,
+				EC865DF01A5D61E9001B3558 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC865DF61A5D61E9001B3558 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C33757B2897553A908B952F6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBAD2E64AD3C646573FC04A1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC865DD81A5D61E9001B3558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC865DE51A5D61E9001B3558 /* AppDelegate.m in Sources */,
+				ECBD0A6A1A5DB6A20062B937 /* GpsPoint.m in Sources */,
+				ECBD0A671A5DA95C0062B937 /* UIColor+ZendriveApiSample.m in Sources */,
+				ECBD0A641A5DA8140062B937 /* ZDMapView.m in Sources */,
+				ECBD0A501A5D67FF0062B937 /* ZendriveScores.m in Sources */,
+				ECBD0A631A5DA8140062B937 /* HTRouteEvent.m in Sources */,
+				ECBD0A3A1A5D65F40062B937 /* ZendriveAPI.m in Sources */,
+				ECBD0A411A5D66220062B937 /* TripListViewController.m in Sources */,
+				ECBD0A5A1A5D96970062B937 /* ParsingUtility.m in Sources */,
+				EC865DE21A5D61E9001B3558 /* main.m in Sources */,
+				ECBD0A4D1A5D67FF0062B937 /* EventCard.m in Sources */,
+				ECBD0A401A5D66220062B937 /* TripDetailsViewController.m in Sources */,
+				ECBD0A561A5D688E0062B937 /* NSObject+BlockAdditions.m in Sources */,
+				ECBD0A4E1A5D67FF0062B937 /* TripCard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC865DF41A5D61E9001B3558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC865DFF1A5D61E9001B3558 /* ZendriveApiSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC865DFA1A5D61E9001B3558 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC865DDB1A5D61E9001B3558 /* ZendriveApiSample */;
+			targetProxy = EC865DF91A5D61E9001B3558 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC865DEC1A5D61E9001B3558 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC865DED1A5D61E9001B3558 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC865DF11A5D61E9001B3558 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC865DF21A5D61E9001B3558 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC865E001A5D61E9001B3558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC865E011A5D61E9001B3558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC865E031A5D61E9001B3558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 604EDC652C401538D77C7270 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "ZendriveApiSample/ZendriveApiSample-Prefix.pch";
+				INFOPLIST_FILE = ZendriveApiSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC865E041A5D61E9001B3558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A5F3138979186B92A7D93B8 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "ZendriveApiSample/ZendriveApiSample-Prefix.pch";
+				INFOPLIST_FILE = ZendriveApiSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC865E061A5D61E9001B3558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZendriveApiSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZendriveApiSample.app/ZendriveApiSample";
+			};
+			name = Debug;
+		};
+		EC865E071A5D61E9001B3558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZendriveApiSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZendriveApiSample.app/ZendriveApiSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC865DD71A5D61E9001B3558 /* Build configuration list for PBXProject "ZendriveApiSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC865E001A5D61E9001B3558 /* Debug */,
+				EC865E011A5D61E9001B3558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC865E021A5D61E9001B3558 /* Build configuration list for PBXNativeTarget "ZendriveApiSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC865E031A5D61E9001B3558 /* Debug */,
+				EC865E041A5D61E9001B3558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC865E051A5D61E9001B3558 /* Build configuration list for PBXNativeTarget "ZendriveApiSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC865E061A5D61E9001B3558 /* Debug */,
+				EC865E071A5D61E9001B3558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC865DD41A5D61E9001B3558 /* Project object */;
+}
